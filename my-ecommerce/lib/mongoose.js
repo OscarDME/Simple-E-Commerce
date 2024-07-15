@@ -9,8 +9,6 @@ export async function initMongoose() {
 
     try {
         await mongoose.connect(URL1, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
         });
         console.log("Connected to MongoDB");
     } catch (error) {
